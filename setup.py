@@ -7,7 +7,6 @@ with open("README.md", "r") as fh:
 setuptools.setup(
      name='slack_utils',
      version='0.1',
-     scripts=[''] ,
      author="Luis Cruz",
      author_email="lcruzc@gmail.com",
      description="A Slack utils package for working with block and dialogs",
