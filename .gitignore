@@ -2,3 +2,4 @@ build/
 dist/
 slack_utils.egg-info/
 *.pyc
+node_modules/
