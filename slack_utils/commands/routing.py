@@ -6,7 +6,7 @@ def handle(routes, payload):
         return route(routes, payload)
 
 def route(routes, payload):
-
+    print(payload)
     if payload.get("type") == "block_actions":
         for route in routes.get("block_actions"):
             for  action in payload.get("actions"):

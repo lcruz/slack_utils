@@ -26,6 +26,36 @@ class DivderBlock():
             "type": "divider",
         }
 
+class InputBlock():
+
+    def __init__(self, text, id=None, action_id=None, accesory=None):
+        self.type = "mrkdwn"
+        self.text = text
+        self.accesory = accesory
+        self.id = id
+        self.action_id = action_id
+
+    def render(self):
+        data = {
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+			},
+			"label": {
+				"type": "plain_text",
+				"text": self.text,
+				"emoji": True
+			}
+		}
+
+        if self.id:
+            data.update({"block_id" : self.id})
+
+        if self.action_id:
+            data.get("element").update({"action_id": self.action_id})
+
+        return data
+
 class ActionButton():
 
     def __init__(self, text, style=None, id=None, value=None, url=None):
