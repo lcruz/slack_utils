@@ -56,7 +56,13 @@ class InputBlock():
             data.get("element").update({"action_id": self.action_id})
 
         if self.placeholder:
-            data.get("element").update({ "placeholder" : self.placeholder})
+            data.get("element").update(
+                {
+                    "placeholder" : {
+                        "type": "plain_text",
+                        "text": self.placeholder
+                    }
+                })
 
         return data
 class ActionButton():
