@@ -28,12 +28,13 @@ class DivderBlock():
 
 class InputBlock():
 
-    def __init__(self, text, id=None, action_id=None, accesory=None):
+    def __init__(self, text, id=None, action_id=None, accesory=None, placeholder=None):
         self.type = "mrkdwn"
         self.text = text
         self.accesory = accesory
         self.id = id
         self.action_id = action_id
+        self.placeholder = placeholder
 
     def render(self):
         data = {
@@ -54,8 +55,10 @@ class InputBlock():
         if self.action_id:
             data.get("element").update({"action_id": self.action_id})
 
-        return data
+        if self.placeholder:
+            data.get("element").update({ "placeholder" : self.placeholder})
 
+        return data
 class ActionButton():
 
     def __init__(self, text, style=None, id=None, value=None, url=None):
