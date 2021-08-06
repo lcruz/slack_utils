@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.2](https://github.com/lcruz/slack_utils/compare/1.2.1...1.2.2) (2021-08-06)
+
+
+### Bug Fixes
+
+* placeholder element is a object ([8280f2a](https://github.com/lcruz/slack_utils/commit/8280f2a53d8f675bb5541a90aaaf2fccdeb12894))
+
 ### [1.2.1](https://github.com/lcruz/slack_utils/compare/1.2.0...1.2.1) (2021-08-06)
 
 
