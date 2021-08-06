@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/lcruz/slack_utils/compare/1.2.0...1.2.1) (2021-08-06)
+
+
+### Bug Fixes
+
+* added placeholder parameter to input ([6c15957](https://github.com/lcruz/slack_utils/commit/6c1595731cc0ec283367bba076d355d8d927e92c))
+
 ## [1.2.0](https://github.com/lcruz/slack_utils/compare/1.1.3...1.2.0) (2021-07-21)
 
 
